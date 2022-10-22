@@ -7,9 +7,9 @@ const webp = require("gulp-webp");
 // Compile SCSS into CSS
 gulp.task("sass", function () {
   return gulp
-    .src("src/css/**/*.scss")
+    .src(["src/css/main.scss"])
     .pipe(sass())
-    .pipe(prefix())
+    .pipe(prefix("last 2 versions"))
     .pipe(gulp.dest("dist/css"))
     .pipe(connect.reload());
 });
