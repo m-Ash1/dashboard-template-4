@@ -1,0 +1,27 @@
+{
+  "name": "dashboard-template-4",
+  "version": "1.0.0",
+  "description": "template 4 using gulp and sass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/m-Ash1/dashboard-template-4.git"
+  },
+  "author": "ash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/m-Ash1/dashboard-template-4/issues"
+  },
+  "homepage": "https://github.com/m-Ash1/dashboard-template-4#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "sass": "^1.55.0"
+  }
+}
