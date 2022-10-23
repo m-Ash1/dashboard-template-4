@@ -5,6 +5,12 @@
 .d-flex {
   display: flex;
 }
+.align-center {
+  align-items: center;
+}
+.justify-center {
+  justify-content: center;
+}
 .bg-white {
   background-color: #fff;
 }
@@ -17,20 +23,28 @@
 .list-style-none {
   list-style: none;
 }
+.w-full {
+  width: 100%;
+}
 
 // margin and padding classes
-
-.p-20 {
-  padding: 20px;
-}
-.m-20 {
-  margin: 20px;
-}
 .p-10 {
   padding: 10px;
 }
 .m-10 {
   margin: 10px;
+}
+.p-15 {
+  padding: 15px;
+}
+.m-15 {
+  margin: 15px;
+}
+.p-20 {
+  padding: 20px;
+}
+.m-20 {
+  margin: 20px;
 }
 .m-0 {
   margin: 0;
@@ -71,7 +85,20 @@ $i: 2;
 .border-radius-5 {
   border-radius: 5px;
 }
-.align-center{
-    align-items: center;
+.border-radius-8 {
+  border-radius: 8px;
 }
+
+//components
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* framework end */

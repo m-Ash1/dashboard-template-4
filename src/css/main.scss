@@ -4,17 +4,32 @@
 
 * {
   box-sizing: border-box;
+  outline: none;
 }
 a {
   text-decoration: none;
   color: black;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: $blue;
+  &:hover {
+    background-color: $alt-blue;
+  }
+}
+::-webkit-scrollbar-track {
+  background-color: white;
+}
+
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
   .page {
     background-color: $bg-main;
-    min-height: 100vh;
+    min-height: 200vh;
   }
   .sidebar {
     width: 250px;
@@ -57,6 +72,84 @@ body {
         }
         span {
           margin-left: 10px;
+        }
+      }
+    }
+  }
+  .content {
+    .head {
+      .search {
+        margin-left: 10px;
+
+        input {
+          border: 1px solid #ccc;
+          padding-left: 30px;
+          width: 160px;
+          transition: width 0.3s;
+          &:focus {
+            width: 200px;
+            outline: #eee;
+            &::placeholder {
+              color: transparent;
+            }
+          }
+        }
+
+        &::before {
+          font-family: "Font Awesome 6 Free";
+          content: "\f002";
+          font-weight: 900;
+          position: absolute;
+          left: 10px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 14px;
+          color: $grey;
+        }
+      }
+      .icons {
+        .icon {
+          &:before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $red;
+            right: -5px;
+            top: -5px;
+            position: absolute;
+          }
+        }
+        img {
+          width: 32px;
+          height: 32px;
+          margin-left: 15px;
+        }
+      }
+    }
+    h1 {
+      margin: 20px 20px 40px;
+
+      &::before,
+      &::after {
+        content: "";
+        height: 3px;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
+      &::before {
+        width: 120px;
+        background-color: white;
+      }
+      &::after {
+        width: 40px;
+        background-color: $black;
+        transition: width 0.3s;
+      }
+      &:hover {
+        &::after {
+          width: 120px;
         }
       }
     }

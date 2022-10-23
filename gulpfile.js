@@ -18,6 +18,14 @@ gulp.task("sass", function () {
 gulp.task("html", function () {
   return gulp.src("src/*.html").pipe(gulp.dest("dist")).pipe(connect.reload());
 });
+// copy images files
+gulp.task("images", function () {
+  return gulp
+    .src("src/images/*.*")
+    .pipe(webp())
+    .pipe(gulp.dest("dist/images/"))
+    .pipe(connect.reload());
+});
 
 // connect server
 gulp.task("connect", function () {
@@ -31,6 +39,7 @@ gulp.task("connect", function () {
 gulp.task("watch", function () {
   gulp.watch("src/css/**/*.scss", gulp.series("sass"));
   gulp.watch("src/*.html", gulp.series("html"));
+  gulp.watch("src/images/*.*", gulp.series("images"));
 });
 
 gulp.task("default", gulp.parallel("connect", "watch"));
