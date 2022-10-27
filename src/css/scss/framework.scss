@@ -1,4 +1,4 @@
-@import "scss/_variables.scss";
+@import "_variables.scss";
 
 /* framework start */
 
@@ -19,6 +19,12 @@
 }
 .text-center {
   text-align: center;
+}
+.d-grid {
+  display: grid;
+}
+.gap-20 {
+  gap: 20px;
 }
 .list-style-none {
   list-style: none;

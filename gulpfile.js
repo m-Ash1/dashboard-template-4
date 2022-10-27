@@ -3,11 +3,12 @@ const prefix = require("gulp-autoprefixer");
 const sass = require("gulp-sass")(require("sass"));
 const connect = require("gulp-connect");
 const webp = require("gulp-webp");
+var rename = require("gulp-rename");
 
 // Compile SCSS into CSS
 gulp.task("sass", function () {
   return gulp
-    .src(["src/css/main.scss"])
+    .src(["src/css/**/*.*"])
     .pipe(sass())
     .pipe(prefix("last 2 versions"))
     .pipe(gulp.dest("dist/css"))
@@ -37,7 +38,7 @@ gulp.task("connect", function () {
 
 // watch tasks
 gulp.task("watch", function () {
-  gulp.watch("src/css/**/*.scss", gulp.series("sass"));
+  gulp.watch("src/css/**/*.*", gulp.series("sass"));
   gulp.watch("src/*.html", gulp.series("html"));
   gulp.watch("src/images/*.*", gulp.series("images"));
 });
