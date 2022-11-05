@@ -17,6 +17,9 @@
 .p-relative {
   position: relative;
 }
+.border-none {
+  border: none;
+}
 .text-center {
   text-align: center;
 }
@@ -31,6 +34,9 @@
 }
 .w-full {
   width: 100%;
+}
+.w-fit {
+  width: fit-content;
 }
 
 // margin and padding classes
@@ -67,13 +73,13 @@
     margin-#{$direction}: 5px;
   }
   .m#{$sympol}-10 {
-    margin-#{$direction}: 20px;
+    margin-#{$direction}: 10px;
   }
   .m#{$sympol}-20 {
     margin-#{$direction}: 20px;
   }
   .p#{$sympol}-10 {
-    padding-#{$direction}: 20px;
+    padding-#{$direction}: 10px;
   }
   .p#{$sympol}-20 {
     padding-#{$direction}: 20px;
@@ -88,7 +94,7 @@
 
 // font size
 $i: 2;
-@while $i < 24 {
+@while $i <= 24 {
   .fs-#{$i} {
     font-size: #{$i}px;
   }
@@ -102,6 +108,18 @@ $i: 2;
 }
 .c-grey {
   color: $grey;
+}
+.c-blue {
+  color: $blue;
+}
+.c-green {
+  color: $green;
+}
+.c-orange {
+  color: $orange;
+}
+.c-red {
+  color: $red;
 }
 .bg-eee {
   background-color: #eee;
@@ -117,8 +135,14 @@ $i: 2;
 .border-radius-8 {
   border-radius: 8px;
 }
+.border-grey {
+  border: 1px solid #ccc;
+}
 .overflow-hidden {
   overflow: hidden;
+}
+.fw-bold {
+  font-weight: bold;
 }
 
 //components

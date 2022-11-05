@@ -110,18 +110,19 @@
             <div class="icon p-relative">
               <i class="fa-regular fa-bell fa-lg"></i>
             </div>
-            <img  src="images/avatar.webp" alt="profile picture" />
+            <img src="images/avatar.webp" alt="profile picture" />
           </div>
         </div>
         <h1 class="p-relative">Dashboard</h1>
         <div class="wrapper d-grid gap-20 ml-20 mr-20">
+          <!-- Welcome Card -->
           <div
-            class="welcome bg-white border-radius-8 overflow-hidden text-center-mobile d-block-mobile"
+            class="welcome-card bg-white border-radius-8 overflow-hidden text-center-mobile d-block-mobile"
           >
             <div class="intro p-20 d-flex space-between bg-eee">
               <div>
-                <h2 class="m-0">Welcome</h2>
-                <p class="mt-5 c-grey">ash</p>
+                <h2 class="m-0 mb-10">Welcome</h2>
+                <p class="c-grey">ash</p>
               </div>
               <img src="images/welcome.webp" class="d-none-mobile" />
             </div>
@@ -130,7 +131,7 @@
               class="profile-img text-center-mobile"
             />
             <div
-              class="body text-center flex-between mt-0 p-20 m-20 d-block-mobile m-0-mobile"
+              class="body text-center flex-between mt-0 p-20 m-20 d-block-mobile"
             >
               <div class="fs-18 mb-10-mobile">
                 ash
@@ -142,10 +143,121 @@
                 80 <span class="d-block fs-14 c-grey mt-5">Projects</span>
               </div>
               <div class="fs-18 mb-10-mobile">
-                salary <span class="d-block fs-14 c-grey mt-5">$20/h</span>
+                $20/h <span class="d-block fs-14 c-grey mt-5">Salary</span>
+              </div>
+            </div>
+            <a
+              href="#"
+              class="btn main-btn d-block fs-14 border-radius-8 mb-20 w-fit"
+              >Profile</a
+            >
+          </div>
+          <!-- End of Welcome Card -->
+
+          <!-- Drafts Card -->
+          <div
+            class="draft-card bg-white border-radius-8 overflow-hidden d-block-mobile p-15"
+          >
+            <h2 class="m-0 mb-10">Quick draft</h2>
+            <p class="c-grey fs-14">Write A Draft For Your Ideas</p>
+            <form class="d-flex">
+              <input
+                class="border-radius-8 border-none bg-eee p-10"
+                type="text"
+                placeholder="Title"
+              />
+              <textarea
+                class="border-radius-8 border-none bg-eee p-10"
+                placeholder="Your Thoughts"
+              ></textarea>
+              <input
+                class="main-btn border-radius-8"
+                type="submit"
+                value="Save"
+              />
+            </form>
+          </div>
+          <!-- End of Drafts Card -->
+
+          <!-- Targets Card -->
+          <div
+            class="targets-card bg-white border-radius-8 overflow-hidden d-block-mobile p-15"
+          >
+            <h2 class="m-0 mb-10">Yearly Targets</h2>
+            <p class="c-grey fs-14">Targets Of The Year</p>
+            <div class="targets d-flex">
+              <div class="target">
+                <div class="icon flex-center">
+                  <i class="fa-solid fa-dollar-sign fa-lg c-blue"></i>
+                </div>
+                <div class="body">
+                  <div class="title c-grey fs-14">Money</div>
+                  <div class="number fw-bold">$20.000</div>
+                  <div class="bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="target">
+                <div class="icon flex-center">
+                  <i class="fa-solid fa-code fa-lg c-orange"></i>
+                </div>
+                <div class="body">
+                  <div class="title c-grey fs-14">Projects</div>
+                  <div class="number fw-bold">24</div>
+                  <div class="bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="target">
+                <div class="icon flex-center">
+                  <i class="fa-solid fa-user fa-lg c-green"></i>
+                </div>
+                <div class="body">
+                  <div class="title c-grey fs-14">Team</div>
+                  <div class="number fw-bold">12</div>
+                  <div class="bar">
+                    <div class="progress"></div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
+          <!-- End of Targets Card -->
+
+          <!-- Tickets  Card -->
+          <div
+            class="tickets-card bg-white border-radius-8 overflow-hidden d-block-mobile p-15"
+          >
+            <h2 class="m-0 mb-10">Tickets Statistics</h2>
+            <p class="c-grey fs-14 mb-20">Everything About Support Tickets</p>
+            <div class="tickets d-flex c-grey fs-12">
+              <div class="ticket text-center p-20 border-radius-5 border-grey">
+                <i
+                  class="fa-regular fa-rectangle-list fa-2x mb-10 c-orange"
+                ></i>
+                <div class="d-block c-black fw-bold fs-24 mb-5">2500</div>
+                Total
+              </div>
+              <div class="ticket text-center p-20 border-radius-5 border-grey">
+                <i class="fa-solid fa-spinner fa-2x mb-10 c-blue"></i>
+                <div class="d-block c-black fw-bold fs-24 mb-5">2500</div>
+                Pending
+              </div>
+              <div class="ticket text-center p-20 border-radius-5 border-grey">
+                <i class="fa-regular fa-circle-check fa-2x mb-10 c-green"></i>
+                <div class="d-block c-black fw-bold fs-24 mb-5">2500</div>
+                Closed
+              </div>
+              <div class="ticket text-center p-20 border-radius-5 border-grey">
+                <i class="fa-regular fa-rectangle-xmark fa-2x mb-10 c-red"></i>
+                <div class="d-block c-black fw-bold fs-24 mb-5">2500</div>
+                Deleted
+              </div>
+            </div>
+          </div>
+          <!-- End of Tickets Card -->
         </div>
       </div>
     </div>
