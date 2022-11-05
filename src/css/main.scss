@@ -336,6 +336,62 @@ body {
           }
         }
       }
+      .latest-news-card {
+        .news-row:not(:last-of-type) {
+          padding-bottom: 20px;
+          margin-bottom: 20px;
+          border-bottom: 1px solid #eee;
+        }
+        .news-row {
+          img {
+            width: 100px;
+            margin-right: 15px;
+          }
+          .body {
+            flex-grow: 1;
+          }
+          .btn {
+            background-color: #eee;
+            color: black;
+            font-size: 13px;
+          }
+        }
+      }
+      .tasks-card {
+        .tasks {
+          .task:not(:last-of-type) {
+            margin-bottom: 20px;
+            // padding-bottom: 10px;
+            border-bottom: 1px solid #eee;
+          }
+          .task {
+            h4 {
+              font-size: 15px;
+            }
+            i {
+              transition: 0.3s;
+              &:hover {
+                cursor: pointer;
+                color: $red;
+              }
+            }
+          }
+        }
+      }
+      .top-searches-card {
+        .table {
+          flex-direction: column;
+          gap: 30px;
+          .entry:not(:first-of-type) {
+            .count {
+              border-radius: 5px;
+              background-color: #eee;
+              padding: 4px 10px;
+              font-size: 13px;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -349,6 +405,7 @@ body {
   margin-right: 10px;
   border: none;
   cursor: pointer;
+  border-radius: 5px;
 
   &:hover {
     background-color: $alt-blue;
@@ -387,6 +444,28 @@ body {
           .tickets {
             .ticket {
               width: 100%;
+            }
+          }
+        }
+        .latest-news-card {
+          h2 {
+            margin-bottom: 20px;
+          }
+          .news-row {
+            .new-col {
+              flex-direction: column;
+              font-size: 14px;
+              .body {
+                p {
+                  margin-bottom: 6px;
+                }
+              }
+              img {
+                margin-bottom: 6px;
+              }
+              .btn {
+                margin-left: initial;
+              }
             }
           }
         }
